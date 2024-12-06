@@ -27,5 +27,11 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "vite": "^6.0.1"
+  },
+  "eslintConfig":{
+    "extends": ["react"],
+    "rules": {
+      "no-unused-vars": "off"
+    }
   }
 }
