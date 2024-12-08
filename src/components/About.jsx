@@ -35,13 +35,13 @@ const About = () => {
 
         <AnimatedTitle
           title="Disc<b>o</b>ver the world's <br /> largest web design s<b>o</b>lution"
-          containerClass="mt-5 !text-black text-center"
+          containerClass="mt-5 !text-black text-center text-2xl"
         />
 
         <div className="about-subtext">
           <p>Your Brand, Now an Epic Digital Experience</p>
           <p className="text-gray-500">
-          Zentry builds custom websites that amplify your reach and impact.
+          BeeOwn builds custom websites that amplify your reach and impact.
           </p>
         </div>
       </div>
