@@ -14,7 +14,7 @@
   <h3 align="center">3d Animated Website</h3>
 
    <div align="center">
-     Ask me doubts related to this project on my discord channel <a href="#discordlink" target="_blank"><b>build with Ronnie</b></a>  Join the devloper family!
+     Ask me doubts related to this project on my discord channel <a href="https://discord.gg/P2ZdEgfzTZ" target="_blank"><b>build with Ronnie</b></a>  Join the devloper family!
     </div>
 </div>
 
@@ -41,7 +41,7 @@ Built a visually captivating website featuring scroll-triggered animations, geom
 
 If you're getting started and need assistance or face any bugs, join our active Discord community. It's a place where people help each other out.
 
-<a href="#discordlink" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+<a href="https://discord.gg/P2ZdEgfzTZ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
