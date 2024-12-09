@@ -105,10 +105,8 @@ const FloatingImage = () => {
 
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Your story deserves to shine online. Build a website 
-              that reflects your brand, drives engagement & sparks lasting impact.
-              Discover opportunities and shape your fate with BeeOwn.
+            <p className="mt-5 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
+            Make your story shine online. Build a website that reflects your brand, drives engagement, and sparks impact. Discover you fate with BeeOwn.
             </p>
 
             <Button
