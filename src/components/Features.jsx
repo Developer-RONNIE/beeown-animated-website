@@ -91,7 +91,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">check details</p>
           </div>
         )}
       </div>
@@ -132,10 +132,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                pr<b>o</b>cess
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Discover the information we need to deliver exactly what you expect, from initial concept to final delivery, ensuring a seamless and successful results."
             isComingSoon
           />
         </BentoTilt>
@@ -145,10 +145,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                s<b>e</b>rvic<b>e</b>s
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Designing static websites, responsive apps, and robust SaaS solutions for B2B companies & Ecommerce needs."
             isComingSoon
           />
         </BentoTilt>
@@ -161,7 +161,8 @@ const Features = () => (
                 pri<b>c</b>ing
               </>
             }
-            description="Charges based on workload and urgency; we're open to negotiating for your needs."
+            description="Charges based on workload & urgency; 
+            we're open to negotiating for your needs."
             isComingSoon
           />
         </BentoTilt>
