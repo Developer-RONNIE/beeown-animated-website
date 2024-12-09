@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://beeown.com" target="_blank">
-      <img src="https://github.com/Developer-RONNIE/beeown-animated-website/tree/main/public/img/img/banner.png" alt="Project Banner">
+      <img src="https://github.com/Developer-RONNIE/beeown-animated-website/blob/main/public/img/banner.png" alt="Project Banner">
     </a>
   <br />
 
