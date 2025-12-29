@@ -9,8 +9,8 @@ const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
-  const [isIndicatorActive, setIsIndicatorActive] = useState(false);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(true);
+  const [isIndicatorActive, setIsIndicatorActive] = useState(true);
 
   // Refs for audio and navigation container
   const audioElementRef = useRef(null);
@@ -26,13 +26,38 @@ const NavBar = () => {
     setIsIndicatorActive((prev) => !prev);
   };
 
-  // Manage audio playback
-  useEffect(() => {
-    if (isAudioPlaying) {
-      audioElementRef.current.play();
-    } else {
+useEffect(() => {
+    const handleInteraction = () => {
+      if (isAudioPlaying && audioElementRef.current) {
+        audioElementRef.current.play()
+          .then(() => {
+            // Bajne laga toh saare listeners hata do
+            window.removeEventListener("click", handleInteraction);
+            window.removeEventListener("scroll", handleInteraction);
+            window.removeEventListener("wheel", handleInteraction);
+            window.removeEventListener("touchstart", handleInteraction);
+          })
+          .catch((err) => console.log("Abhi bhi block hai:", err));
+      }
+    };
+
+    window.addEventListener("click", handleInteraction);
+    window.addEventListener("scroll", handleInteraction);
+    window.addEventListener("wheel", handleInteraction); // Mouse wheel ke liye
+    window.addEventListener("touchstart", handleInteraction); // Mobile touch ke liye
+
+    if (isAudioPlaying && audioElementRef.current) {
+      audioElementRef.current.play().catch(() => {});
+    } else if (audioElementRef.current) {
       audioElementRef.current.pause();
     }
+
+    return () => {
+      window.removeEventListener("click", handleInteraction);
+      window.removeEventListener("scroll", handleInteraction);
+      window.removeEventListener("wheel", handleInteraction);
+      window.removeEventListener("touchstart", handleInteraction);
+    };
   }, [isAudioPlaying]);
 
   useEffect(() => {
